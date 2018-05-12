@@ -1,14 +1,558 @@
-<html>
-<title>熊式制造</title>
+<!DOCTYPE html>
+<htm class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="overflow: hidden;">
 <head>
-<style type="text/css">
-body {background: #222;color: #ffc728;text-align:  center;}
-div {font-size: 10em; margin-bottom: 0.5em;}
-</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="熊豆,kumame,独立游戏" />
+	<meta name="description" content="熊豆kumame，独立制作人 " />
+    <meta name="author" content="熊豆kumame">
+    <title>熊式制造 | kumame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/slit-slider.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    
+<style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
 </head>
-<body>
-<div>Oops!</div>
-<p>网站正在建设中……</p>
-<iframe width="304" height="500" class="share_self" frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&amp;width=0&amp;height=500&amp;fansRow=2&amp;ptype=1&amp;speed=0&amp;skin=2&amp;isTitle=0&amp;noborder=1&amp;isWeibo=1&amp;isFans=0&amp;uid=1587407175&amp;verifier=bbf78df1&amp;dpc=1"></iframe>
+
+<body id="body">
+
+<div id="loading-mask" style="display: none;"><div data-loader="satellite"></div></div>
+
+		<section id="home">	    
+		
+            <div id="slitSlider" class="sl-slider-wrapper" style="height: 974px;">
+				<div class="sl-slider" style="width: 1920px; height: 974px;">
+					
+					<!-- single slide item -->
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-1"></div>
+						<div class="carousel-caption">
+							<div>
+								<img class="wow fadeInUp" src="img/kumalogo.png" alt="熊式制造" style="padding-bottom: 5em;">
+								<h2 data-wow-duration="500ms"  data-wow-delay="500ms" class="heading animated fadeInRight">Hello, World!</h2>
+							</div>
+						</div>
+						</div>
+					</div>
+					<!-- /single slide item -->
+
+
+					<!-- single slide item -->
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-2"></div>
+						<div class="carousel-caption">
+							<div>
+								<img class="wow fadeInUp" src="img/lilylogo.png" alt="鲜红百合">
+								<h3 class="animated fadeInUp">向这个疯狂的世界宣战</h3>
+								<a class="btn btn-green animated fadeInUp" href="http://bloodlily.kumame.pw" target="_blank">官网主页</a>
+							</div>
+						</div>
+						</div>
+					</div>
+					<!-- /single slide item -->
+					
+					<!-- single slide item -->
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-3"></div>
+						<div class="carousel-caption">
+							<div>
+								<h2 class="heading animated fadeInRight">Here's to future</h2>
+								<h3 class="animated fadeInLeft">你所描绘的未来，我将全力以赴。</h3>
+								<a class="btn btn-green animated fadeInUp" href="https://weibo.com/bloodlilyproject" target="_blank">关注动态</a>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<!-- /single slide item -->
+
+				</div><!-- /sl-slider -->
+				
+				<nav id="nav-arrows" class="nav-arrows">
+					<span class="nav-arrow-prev">Previous</span>
+					<span class="nav-arrow-next">Next</span>
+				</nav>
+
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+		</section>
+
+        <div id="navigation-sticky-wrapper" class="sticky-wrapper" style="height: 68px;"><header id="navigation" class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+                    <a class="navbar-brand" href="./">
+						<h1 id="logo">
+							<img src="img/kumalogo-s.png" alt="熊式制造">
+						</h1>
+					</a>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class=""><a href="#body">Home</a></li>
+                        <li class="current"><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#showcase">Works</a></li>
+                        <li><a href="#blog">Project</a></li>
+                        <li><a href="#contact-us">Contact</a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header></div>
+
+<!-- about set -->
+		<section id="about" class="bg-one">
+			<div class="container">
+				<div class="row">
+				
+					<div class="title text-center wow fadeIn animated" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeIn;">
+						<h2>About <span class="color">kumame</span></h2>
+						<div class="border"></div>
+					</div>
+					
+					<div class="text-center wow fadeInUp animated" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-name: fadeInUp;">
+						<div class="wrap-about">
+								<img class="icon-box" src="img/kumame.jpg">			
+							<div class="about-content text-center">
+								<h3 class="ddd">熊豆</h3>								
+								<p>ACGN全领域霸制但长期步入歧途的目标不做人之士。<br>有掌握电子脑义体化技术的请务必联络我。</p>
+							</div>
+						</div>
+					</div> 
+
+				</div>
+			</div>
+		</section> 
+
+		<section id="counter" class="parallax-section" style="background-position: 50% 272px;">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" style="visibility: hidden; animation-duration: 500ms; animation-name: none;">
+						<div class="counters-item" style="border:0;background:none;color:#1e5379">
+							<div>
+							    <span data-speed="3000" data-to="186">186</span>
+								<span>m</span>
+							</div>
+							<i class="fa fa-users fa-3x"></i>
+							<h3>Dive Depth</h3>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+<!-- services set -->
+		<section id="services" class="bg-one">
+			<div class="container">
+				<div class="row">
+					
+					<div class="title text-center wow fadeIn" data-wow-duration="500ms" style="visibility: hidden; animation-duration: 500ms; animation-name: none;">
+						<h2>My <span class="color">Services</span></h2>
+						<div class="border"></div>
+					</div>
+					
+					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" style="visibility: hidden; animation-duration: 500ms; animation-name: none;">
+						<div class="service-block text-center">
+							<div class="service-icon text-center">
+								<i class="fa fa-wordpress fa-5x"></i>
+							</div>
+							<h3>标志、平面设计</h3>
+							<p>擅长文字标志设计、极简主义平面设计，及图文排版。同时具备网页化代码能力。</p>
+						</div>
+					</article>
+                    
+					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms" style="visibility: hidden; animation-duration: 500ms; animation-delay: 200ms; animation-name: none;">
+						<div class="service-block text-center">
+							<div class="service-icon text-center">
+								<i class="fa fa-desktop fa-5x"></i>
+							</div>
+							<h3>二维角色设计及动画制作</h3>
+							<p>擅长Q版角色及少女角色设计，角色动画使用AE和MOHO完成。针对游戏的Spine暂不承接。</p>
+						</div>
+					</article>
+                    
+					<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms" style="visibility: hidden; animation-duration: 500ms; animation-delay: 400ms; animation-name: none;">
+						<div class="service-block text-center">
+							<div class="service-icon text-center">
+								<i class="fa fa-play fa-5x"></i>
+							</div>
+							<h3>MG影像制作</h3>
+							<p>擅长极简主义风格设计，可做创意方案规划。主要使用软件：AE、C4D、MOHO</p>
+						</div>
+					</article>
+						
+				</div>
+			</div>
+		</section>
+
+<!-- works set -->
+		<section id="showcase">
+			<div class="container">
+				<div class="row wow fadeInDown" data-wow-duration="500ms" style="visibility: hidden; animation-duration: 500ms; animation-name: none;">
+					<div class="col-lg-12">
+					
+						<div class="title text-center">
+							<h2>My <span class="color">Works</span></h2>
+							<div class="border"></div>
+						</div>
+					
+						<div class="portfolio-filter clearfix">
+							<ul class="text-center">
+							    <li><a href="javascript:void(0)" class="filter active" data-filter="all">All</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".design">平面与设计</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".ezu">插画漫画</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".video">影像动画</a></li>
+								<li><a href="javascript:void(0)" class="filter" data-filter=".game">独立游戏</a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+	
+<!-- portfolio items -->
+			<div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms" style="visibility: hidden; animation-duration: 500ms; animation-name: none;">
+                <ul id="og-grid" class="og-grid">
+				
+					<li class="mix ezu" style="display: inline-block;">
+						<a href="http://kumame.lofter.com/post/152d6a_cc19a89" data-largesrc="img/works1.jpg" data-title="插画 色块风" data-description="多以四头身比以下可爱风格为主。">
+							<img src="img/works1-p.jpg" alt="插画 色块">
+							<div class="hover-mask">
+								<h3>插画 色块</h3>
+								<span>+</span>
+							</div>
+						</a>
+					</li>
+					
+					<li class="mix ezu" style="display: inline-block;">
+						<a href="http://kumame.lofter.com/?page=2" data-largesrc="img/works2.jpg" data-title="插画 赛璐璐" data-description="常规赛璐璐画法，多以少女们为主。">
+							<img src="img/works2-p.jpg" alt="插画 赛璐璐">
+							<div class="hover-mask">
+								<h3>插画 赛璐璐</h3>
+								<span>+</span>
+							</div>
+						</a>
+					</li>
+					
+					<li class="mix ezu" style="display: inline-block;">
+						<a href="http://kumame.lofter.com/tag/漫画" data-largesrc="img/works3.jpg" data-title="漫画 日式" data-description="时常不务正业的漫画，可以点击链接查看全部和其他漫画。">
+							<img src="img/works3-p.jpg" alt="漫画 日式">
+							<div class="hover-mask">
+								<h3>漫画 日式</h3>
+								<span>+</span>
+							</div>
+						</a>
+					</li>
+					
+					<li class="mix design" style="display: inline-block;">
+						<a href="javascript:void(0)" data-largesrc="img/works4.jpg" data-title="平面设计 文字" data-description="一部分文字标识设计。">
+							<img src="img/works4-p.jpg" alt="文字平面设计">
+							<div class="hover-mask">
+								<h3>平面设计 文字</h3>
+								<span>+</span>
+							</div>
+						</a>
+					</li>
+					
+					<li class="mix design" style="display: inline-block;">
+						<a href="javascript:void(0)" data-largesrc="img/works5.jpg" data-title="平面设计 排版" data-description="一部分网页专题设计、海报设计以及图文排版。">
+							<img src="img/works5-p.jpg" alt="平面设计 排版">
+							<div class="hover-mask">
+								<h3>平面设计 排版</h3>
+								<span>+</span>
+							</div>
+						</a>
+					</li>
+					
+					<li class="mix design" style="display: inline-block;">
+						<a href="javascript:void(0)" data-largesrc="img/works6.jpg" data-title="Q版角色设计" data-description="以茉莉花为主题和色调进行的系列设计。">
+							<img src="img/works6-p.jpg" alt="Q版角色设计">
+							<div class="hover-mask">
+								<h3>Q版角色设计</h3>
+								<span>+</span>
+							</div>	
+						</a>
+					</li>
+					
+					<li class="mix video" style="display: inline-block;">
+						<a href="http://kumame.lofter.com/tag/gif" data-largesrc="img/works7.jpg" data-title="二维角色动画" data-description="Mr.cube使用AE完成，小女孩的动画则是用MOHO完成。">
+							<img src="img/works7.gif" alt="二维角色动画">
+							<div class="hover-mask">
+								<h3>二维角色动画</h3>
+								<span>+</span>
+							</div>	
+						</a>
+					</li>
+					
+					<li class="mix video" style="display: inline-block;">
+						<a href="https://www.bilibili.com/video/av9076028" data-largesrc="img/works8.jpg" data-title="动画影像 浮空之岛" data-description="为音乐人iKz的单曲《浮空之岛》制作的动画影像。<br>使用AE和C4D配合完成，角色动画则是在AE中用脚本与网格实现操控。">
+							<img src="img/works8-p.jpg" alt="动画影像 浮空之岛">
+							<div class="hover-mask">
+								<h3>动画影像 浮空之岛</h3>
+								<span>+</span>
+							</div>
+						</a>
+					</li>
+					
+					<li class="mix video" style="display: inline-block;">
+						<a href="https://www.bilibili.com/video/av16201808" data-largesrc="img/works9.jpg" data-title="动画影像 生肖之歌" data-description="受邀为哔哩哔哩拜年祭2018的《生肖之歌》制作音乐动画影像。<br>角色使用MOHO完成制作及动画，AE进行镜头与后期合成。动画开始时间为6分16秒处。">
+							<img src="img/works9-p.jpg" alt="动画影像 生肖之歌">
+							<div class="hover-mask">
+								<h3>动画影像 生肖之歌</h3>
+								<span>+</span>
+							</div>
+						</a>
+					</li>
+					
+					<li class="mix video" style="display: inline-block;">
+						<a href="https://weibo.com/2863503100/FBeS0eSgJ" data-largesrc="img/works10.jpg" data-title="糖人家宣传影像" data-description="MG混合视效剪辑技法，同时给角色插画制作网格动画。">
+							<img src="img/works10-p.jpg" alt="糖人家宣传影像">
+							<div class="hover-mask">
+								<h3>糖人家宣传影像</h3>
+								<span>+</span>
+							</div>	
+						</a>
+					</li>
+
+					<li class="mix game" style="display: inline-block;">
+						<a href="http://kumagame.lofter.com/post/48c1a1_2608fd8" data-largesrc="img/works11.jpg" data-title="独立游戏 光之船" data-description="相对简短的剧情流冒险类别游戏，使用Action Game Maker引擎制作。<br>从策划、数值到美术以及核心音乐均由个人完成。<br>授权登陆在QQ游戏单机里→http://danji.qq.com/app/gamedetail_30063.shtml">
+							<img src="img/works11-p.jpg" alt="独立游戏 光之船">
+							<div class="hover-mask">
+								<h3>独立游戏 光之船</h3>
+								<span>+</span>
+							</div>
+						</a>
+					</li>
+
+					<li class="mix game" style="display: inline-block;">
+						<a href="https://weibo.com/1587407175/C0WVLiLUR" data-largesrc="img/works12.jpg" data-title="小游戏 陨星" data-description="实验性弹幕动作类小游戏，使用Action Game Maker引擎制作。从策划、数值到美术均由个人完成。">
+							<img src="img/works12.jpg" alt="小游戏 陨星">
+							<div class="hover-mask">
+								<h3>小游戏 陨星</h3>
+								<span>+</span>
+							</div>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+			
+		</section>
+
+<!-- skill set -->
+		<section id="team-skills" class="parallax-section">
+			<div class="container">
+				<div class="row wow fadeInDown" data-wow-duration="500ms" style="visibility: hidden; animation-duration: 500ms; animation-name: none;">
+				
+					<div class="title text-center">
+						<h2>My <span class="color">Skills</span></h2>
+						<div class="border"></div>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" style="visibility: hidden; animation-duration: 500ms; animation-name: none;">
+						<div class="skill-chart text-center">
+							<span class="chart" data-percent="90">
+								<span class="percent"></span>
+							</span>
+							<h3><i class="fa fa-wordpress"></i>After Effects</h3>
+							<p>主流视效插件均会使用，掌握Motion Graphic脚本流与动力学Newton。</p>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms" style="visibility: hidden; animation-duration: 500ms; animation-delay: 200ms; animation-name: none;">
+						<div class="skill-chart text-center">
+							<span class="chart" data-percent="75">
+								<span class="percent">75</span>
+							</span>
+							<h3><i class="fa fa-html5"></i>MOHO</h3>
+							<p>掌握矢量骨绑、网格骨绑及动态骨绑，会做动画变形流。</p>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms" style="visibility: hidden; animation-duration: 500ms; animation-delay: 400ms; animation-name: none;">
+						<div class="skill-chart text-center">
+							<span class="chart" data-percent="70">
+								<span class="percent"></span>
+							</span>
+							<h3><i class="fa fa-android"></i>Draw</h3>
+							<p>主攻日系，色块、平涂与赛璐璐是常用技法。漫画方面以黑白为主修行中。</p>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms" style="visibility: hidden; animation-duration: 500ms; animation-delay: 600ms; animation-name: none;">
+						<div class="skill-chart text-center">
+							<span class="chart" data-percent="80">
+								<span class="percent"></span>
+							</span>
+							<h3><i class="fa fa-apple"></i>Design</h3>
+							<p>极简主义流派，从平面设计到影像设计还有网页UI设计都均有掌握。</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section> 
+
+<!-- project set -->
+		<section id="blog" class="bg-one">
+			<div class="container">
+				<div class="row">
+
+					<div class="title text-center wow fadeInDown" style="visibility: hidden; animation-name: none;">
+						<h2>My <span class="color">Project</span></h2>
+						<div class="border"></div>
+					</div>
+
+					<div class="clearfix">
+					
+						<article class="col-md-4 col-sm-6 col-xs-12 clearfix wow fadeInUp" data-wow-duration="500ms" style="visibility: hidden; animation-duration: 500ms; animation-name: none;">
+							<div class="note">
+								<div class="media-wrapper">
+									<img src="img/p1.jpg" alt="amazing caves coverimage" class="img-responsive">
+								</div>
+								
+								<div class="excerpt">
+									<h3>Bard'Song</h3>
+									<p>《吟游诗人之歌：彼世物语》<br>早年创作的西方奇幻故事，讲述的是一个反抗命运的故事。创作进度缓慢，处于有生之年状态，但不会放弃。</p>
+									<a class="btn btn-transparent" href="http://kumame.lofter.com/tag/travel" target="_blank">前往相关页面</a>
+								</div>
+							</div>						
+						</article>
+						
+						<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms" style="visibility: hidden; animation-duration: 500ms; animation-delay: 600ms; animation-name: none;">
+							<div class="note kill-margin-bottom">
+								<div class="media-wrapper">
+									<img src="img/p3.jpg" alt="amazing caves coverimage" class="img-responsive">
+								</div>
+								<div class="excerpt">
+									<h3>Blood Lily</h3>
+									<p>《鲜红百合》<br>正在进行中的创作，故事舞台设定在虚构现代，以游戏的方式进行，大概还会有其他的同步企划。</p>
+									<a class="btn btn-transparent" href="http://bloodlily.kumame.pw" target="_blank">前往相关页面</a>
+								</div>
+							</div>						
+						</article>
+
+						<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms" style="visibility: hidden; animation-duration: 500ms; animation-delay: 400ms; animation-name: none;">
+							<div class="note">
+								<div class="media-wrapper">
+									<img src="img/p2.jpg" alt="amazing caves coverimage" class="img-responsive">
+								</div>
+								
+								<div class="excerpt">
+									<h3>About Valastiga</h3>
+									<p>《关于瓦兰斯蒂卡》<br>轻科幻创作型企划，由于个人精力有限问题处于冷冻状态，排队等着被填起来。都敢列出来当然没放弃。</p>
+									<a class="btn btn-transparent" href="http://valastiga.l-plan.org" target="_blank">前往相关页面</a>
+								</div>
+							</div>						
+						</article>
+						
+
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+<!-- cont set -->
+		<section id="contact-us">
+			<div class="container">
+				<div class="row">
+					
+					<div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms" style="visibility: hidden; animation-duration: 500ms; animation-name: none;">
+						<h3>Contact Details</h3>
+						<p><span class="color">承接标志平面设计，二维角色设计及动画制作；Motion Graphic影像制作。</span><br>
+						有合作意向的阁下可发送邮件或从以下任意链接的平台联系。为节约双方宝贵的时间，请务必详细说明需求和期限，以便第一时间答复。</p>
+						<div class="contact-details">
+							
+							<div class="con-info clearfix">
+								<span>Email:<a href="mailto:enchant@vip.qq.com"> enchant@vip.qq.com</a></span>
+							</div>
+							<div class="con-info clearfix">
+								<span>新浪微博：<a href="https://weibo.com/lostenchant" target="_blank">@-熊豆</a></span><br>
+								<span>LFT主图：<a href="http://kumame.lofter.com/" target="_blank">kumame.lofter.com</a></span><br>
+								<span>LFT主文：<a href="http://midareru.lofter.com" target="_blank">midareru.lofter.com</a></span><br>
+								<span>LFT游戏：<a href="http://kumagame.lofter.com" target="_blank">kumagame.lofter.com</a></span><br>
+								<span>哔哩哔哩：<a href="https://space.bilibili.com/52591" target="_blank">space.bilibili.com/52591</a></span><br>
+							</div>
+							
+						</div>
+					</div>
+						
+				</div>
+			</div>
+		</section>
+
+<!-- foter set -->
+		<footer id="footer" class="bg-one">
+			<div class="container">
+			    <div class="row wow fadeInUp" data-wow-duration="500ms" style="visibility: hidden; animation-duration: 500ms; animation-name: none;">
+					<div class="col-lg-12">
+						<div class="copyright text-center">
+								<img src="img/kumalogo-s.png" alt="Meghna"> 
+							<br>
+							
+							<p>Copyright © 2018.All rights reserved.<a href="http://www.kumame.pw">熊豆kumame</a></p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+
+<a href="javascript:;" id="scrollUp" style="display: inline;">&and;</a>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="js/jquery.slitslider.js"></script>
+<script src="js/jquery.ba-cond.min.js"></script>
+<script src="js/jquery.parallax-1.1.3.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/easyPieChart.js"></script>
+<script src="js/jquery.easing-1.3.pack.js"></script>
+<script src="js/tweetie.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/custom.js"></script>
+
+<div id="ascrail2000" class="nicescroll-rails" style="width: 8px; z-index: 9999; position: fixed; top: 0px; height: 100%; right: 0px; cursor: default; opacity: 0;"><div style="position: relative; float: right; width: 8px; background-color: rgb(108, 182, 112); border: 0px; background-clip: padding-box; border-radius: 0px; height: 150px; top: 74px;"></div></div><div id="ascrail2000-hr" class="nicescroll-rails" style="height: 8px; z-index: 9999; position: fixed; left: 0px; width: 100%; bottom: 0px; cursor: default; opacity: 0; display: none;"><div style="position: relative; top: 0px; height: 8px; background-color: rgb(108, 182, 112); border: 0px; background-clip: padding-box; border-radius: 0px; width: 150px;"></div></div>
 </body>
 </html>
