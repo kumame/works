@@ -673,4 +673,4 @@
 		
 	};
 	
-} )( jQuery, window );
+} )(jQuery,window);
